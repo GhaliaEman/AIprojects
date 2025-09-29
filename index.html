@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MetaAI Blog — Home</title>
+  <meta name="description" content="AI blog with modern neon theme, responsive navbar, and dark/light mode toggle." />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Orbitron:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="javascript.js">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+
+</head>
+
+<script>
+  window.addEventListener("load", function() {
+    setTimeout(() => {
+      document.getElementById("preloader").style.display = "none";
+      document.getElementById("main-content").style.display = "block";
+    }, 2000); // 2 sec delay
+  });
+</script>
+
+
+<body>
+
+  
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="dots">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+
+  <!-- Main Website -->
+  <div id="main-content">
+   
+  <header>
+    <div class="navbar">
+      <div class="logo">MetaAI</div>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#latest">Latest</a>
+        <a href="#tools">Tools</a>
+        <a href="#review">Reviews</a>
+        <a href="#future">Future</a>
+        <a href="#faqs">FAQs</a>
+        <a href="#contant">Contant</a>
+      </nav>
+      <div class="actions">
+        <!-- <button class="dark-toggle" id="themeToggle">🌙</button> -->
+        <button class="login-btn" id="loginBtn" onclick="window.location.href='login.html'">Login</button>
+
+      </div>
+    </div>
+  </header>
+
+  
+  
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <!-- Background Video -->
+    <video autoplay muted loop class="hero-video">
+      <source src="images\video\AI video.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+
+    <!-- Dark Overlay -->
+    <div class="overlay"></div>
+
+    <!-- Hero Content -->
+    <div class="hero-content">
+      <h1>Welcome to <span>AI Blog</span></h1>
+      <p>Explore the latest insights, tutorials, and news about Artificial Intelligence & Technology.</p>
+      <div class="hero-buttons">
+        <a href="#articles" class="btn primary">🚀 Explore Articles</a>
+        <a href="#community" class="btn secondary">💡 Join Community</a>
+      </div>
+    </div>
+
+    <!-- Floating Illustration -->
+    <div class="hero-image">
+      <img src="https://cdn-icons-png.flaticon.com/512/4712/4712100.png" alt="AI Illustration">
+    </div>
+  </section>
+
+  <section id="about" class="about-ai">
+    <div class="about-container">
+      <!-- Left Side Image -->
+      <div class="about-image">
+        <img src="images\AI.jpg" alt="AI Illustration">
+      </div>
+
+      <!-- Right Side Content -->
+      <div class="about-content">
+        <h2>🤖 About <span>Artificial Intelligence</span></h2>
+        <p>
+          Artificial Intelligence (AI) is transforming the world with smart systems, automation,
+          and advanced problem-solving capabilities. From healthcare to education, and from
+          robotics to creativity, AI is shaping the future of technology.
+        </p>
+        <p>
+          Our mission is to explore cutting-edge AI research, provide tutorials, and build
+          a community of learners and innovators who believe in the power of AI.
+        </p>
+
+        <!-- Features List -->
+        <ul class="features">
+          <li>🧠 Machine Learning & Deep Learning</li>
+          <li>🤖 AI in Robotics & Automation</li>
+          <li>📊 Data Science & Predictive Analytics</li>
+          <li>🌍 Global AI Community</li>
+        </ul>
+
+        <a href="#courses" class="btn-explore">🚀 Explore AI Resources</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Latest AI News Section -->
+<section id="latest" class="latest-news">
+  <h2 class="section-title">📰 Latest in AI</h2>
+  <p class="section-subtitle">Stay updated with the world of Artificial Intelligence</p>
+
+  <div class="news-grid">
+    <!-- News Card 1 -->
+    <div class="news-card reveal">
+      <img src="images/AIfuture.jpg" alt="AI Future">
+      <div class="news-content">
+        <h3>AI Revolution in Healthcare</h3>
+        <p>Discover how AI is transforming hospitals with faster diagnostics and personalized treatments.</p>
+        <a href="news1.html" class="read-more" target="_blank">Read More →</a>
+      </div>
+    </div>
+
+    <!-- News Card 2 -->
+    <div class="news-card reveal">
+      <img src="images/AIrobot2.jpg" alt="AI Robot">
+      <div class="news-content">
+        <h3>Humanoid Robots on the Rise</h3>
+        <p>Next-gen humanoid robots are being used in industries, education, and even homes.</p>
+        <a href="news2.html" class="read-more" target="_blank">Read More →</a>
+      </div>
+    </div>
+
+    <!-- News Card 3 -->
+    <div class="news-card reveal">
+      <img src="images/AIbrain.jpg" alt="AI Brain">
+      <div class="news-content">
+        <h3>AI & Creative Arts</h3>
+        <p>From music to painting, AI is reshaping the world of creativity and imagination.</p>
+        <a href="news3.html" class="read-more" target="_blank">Read More →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  <script>
+    // Scroll Reveal Effect
+    function revealOnScroll() {
+      const reveals = document.querySelectorAll('.reveal');
+      for (let i = 0; i < reveals.length; i++) {
+        const windowHeight = window.innerHeight;
+        const revealTop = reveals[i].getBoundingClientRect().top;
+        const revealPoint = 100;
+
+        if (revealTop < windowHeight - revealPoint) {
+          reveals[i].classList.add('active');
+        } else {
+          reveals[i].classList.remove('active');
+        }
+      }
+    }
+
+    window.addEventListener('scroll', revealOnScroll);
+    window.addEventListener('load', revealOnScroll); // run on page load
+  </script>
+
+  <!-- 🚀 AI Tools Showcase Section -->
+  <section id="tools" class="ai-tools">
+    <h2 class="section-title ">🛠️ Popular AI Tools</h2>
+    <p class="section-subtitle">Explore trending AI tools and frameworks</p>
+
+    <div class="tools-grid">
+      <!-- Tool 1 -->
+      <div class="tool-card">
+        <img src="images\ChatGpt.png" alt="ChatGPT">
+        <h3>ChatGPT</h3>
+        <p>ChatGPT is an AI language model created by OpenAI that can interact with humans in a natural way.People worldwide use it for studies.</p>
+        <a href="#" class="btn-explore">Explore →</a>
+      </div>
+
+      <!-- Tool 2 -->
+      <div class="tool-card">
+        <img src="images\META AI(1).jpeg" alt="Meta AI">
+        <h3>Meta AI</h3>
+        <p>Meta AI is a research and development division of Meta (formerly Facebook) focused on advancing artificial intelligence.</p>
+        <a href="#" class="btn-explore">Explore →</a>
+      </div>
+
+      <!-- Tool 3 -->
+      <div class="tool-card">
+        <img src="images\deepseek.png" alt="deepseek">
+        <h3>DeepSeek</h3>
+        <p>DeepSeek is an advanced AI model developed in China, designed to perform powerful natural language processing.</p>
+        <a href="#" class="btn-explore">Explore →</a>
+      </div>
+
+      <!-- Tool 4 -->
+    <div class="tool-card">
+      <img src="images\Google Assistent.png" alt="Google Assistant">
+      <h3>Google Assistant </h3>
+      <p>Google Assistant is a virtual AI-powered assistant developed by Google to help users with everyday tasks.</p>
+      <a href="#" class="btn-explore">Explore →</a>
+    </div>
+      
+    </div>
+  </section>
+
+
+  <!-- Testimonial Section -->
+  <section id="review" class="testimonial-section py-5">
+    <div class="container text-center">
+      <h2 class="gradient-heading mb-4"> What People Say About Our AI</h2>
+
+      <!-- Carousel -->
+      <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+
+          <!-- Testimonial 1 -->
+          <div class="carousel-item active">
+            <div class="testimonial-card mx-auto">
+              <img src="images\Ishaq.jfif" alt="user">
+              <h5>Ishaq Khan</h5>
+              <p class="role">AI Researcher</p>
+              <p class="feedback">“This AI tool transformed my workflow. Its accuracy and efficiency are beyond my
+                expectations.”</p>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="carousel-item">
+            <div class="testimonial-card mx-auto">
+              <img src="images\Umar Khan.png" alt="user">
+              <h5>Umar Khan</h5>
+              <p class="role">Software Engineer</p>
+              <p class="feedback">“A must-have for anyone working with data. The AI insights are simply game-changing.”
+              </p>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="carousel-item">
+            <div class="testimonial-card mx-auto">
+              <img src="images\Usama Qamar.png" alt="user">
+              <h5>Usama Qamar</h5>
+              <p class="role">Entrepreneur</p>
+              <p class="feedback">“Our business productivity doubled after adopting this AI system. Highly recommended!”
+              </p>
+            </div>
+          </div>
+
+          <!-- Testimonial 4 -->
+          <div class="carousel-item">
+            <div class="testimonial-card mx-auto">
+              <img src="images\Qasim Khan.png" alt="user">
+              <h5>Qasim Khan</h5>
+              <p class="role">Data Scientist</p>
+              <p class="feedback">“The AI suggestions save me hours every week. Truly a revolutionary tool for
+                professionals.”</p>
+            </div>
+          </div>
+
+          <!-- Testimonial 5 -->
+          <div class="carousel-item">
+            <div class="testimonial-card mx-auto">
+              <img src="images\Numan Khan.png" alt="user">
+              <h5>Numan Khan</h5>
+              <p class="role">Startup Founder</p>
+              <p class="feedback">“With this AI, we scaled faster than ever before. It feels like having a smart partner
+                24/7.”</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Carousel controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    const testimonialCarousel = document.querySelector('#testimonialCarousel');
+    const carousel = new bootstrap.Carousel(testimonialCarousel, {
+      interval: 2500,  // Auto slide every 2.5 seconds
+      ride: 'carousel'
+    });
+  </script>
+
+  <section id="future" class="future-ai py-5">
+    <div class="container">
+      <h2 class="section-title text-center mb-4" data-aos="fade-up">🚀 Future of AI</h2>
+      <p class="section-subtitle text-center mb-5" data-aos="fade-up" data-aos-delay="200">
+        Discover how Artificial Intelligence will transform our world in the coming years.
+      </p>
+
+      <div class="row g-4">
+        <!-- Card 1 -->
+        <div class="col-md-4" data-aos="zoom-in">
+          <div class="future-card h-100 p-4 text-center">
+            <i class="bi bi-book-half fs-1 text-primary mb-3"></i>
+            <h5 class="fw-bold">Education</h5>
+            <p>AI will act like a personal tutor, make smart notes, and improve learning experiences for every student.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+          <div class="future-card h-100 p-4 text-center">
+            <i class="bi bi-heart-pulse-fill fs-1 text-danger mb-3"></i>
+            <h5 class="fw-bold">Healthcare</h5>
+            <p>From faster diagnosis to AI-powered surgeries, healthcare will become smarter and safer.</p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="400">
+          <div class="future-card h-100 p-4 text-center">
+            <i class="bi bi-briefcase-fill fs-1 text-success mb-3"></i>
+            <h5 class="fw-bold">Business & Jobs</h5>
+            <p>AI will automate routine work, while humans focus on creativity and big decisions.</p>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="600">
+          <div class="future-card h-100 p-4 text-center">
+            <i class="bi bi-house-door-fill fs-1 text-warning mb-3"></i>
+            <h5 class="fw-bold">Daily Life</h5>
+            <p>Smart homes, self-driving cars, and AI assistants will make life more comfortable and efficient.</p>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="800">
+          <div class="future-card h-100 p-4 text-center">
+            <i class="bi bi-rocket-takeoff-fill fs-1 text-info mb-3"></i>
+            <h5 class="fw-bold">Science & Space</h5>
+            <p>AI will help discover new medicines, explore space, and solve complex global challenges.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000, // animation speed
+      once: true      // ek hi bar chale animation
+    });
+  </script>
+
+  <!-- FAQs Section -->
+  <section id="faqs" class="faqs py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">❓ Frequently Asked Questions</h2>
+        <p class="text-muted">Find answers to common questions about our AI tool.</p>
+      </div>
+
+      <div class="accordion" id="faqAccordion">
+        <!-- FAQ 1 -->
+        <div class="accordion-item mb-3 rounded-3 shadow-sm" data-aos="fade-up" data-aos-delay="100">
+          <h2 class="accordion-header" id="faqOne">
+            <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#answerOne"
+              aria-expanded="true" aria-controls="answerOne">
+              What is included in the free plan?
+            </button>
+          </h2>
+          <div id="answerOne" class="accordion-collapse collapse show" aria-labelledby="faqOne"
+            data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Our free plan includes access to basic features, limited usage, and community support. It’s a great way
+              to explore our services before upgrading to a paid plan.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="accordion-item mb-3 rounded-3 shadow-sm" data-aos="fade-up" data-aos-delay="100">
+          <h2 class="accordion-header" id="faqTwo">
+            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+              data-bs-target="#answerTwo" aria-expanded="false" aria-controls="answerTwo">
+              Can I upgrade my plan anytime?
+            </button>
+          </h2>
+          <div id="answerTwo" class="accordion-collapse collapse" aria-labelledby="faqTwo"
+            data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Yes, you can upgrade your plan anytime. The changes will be applied instantly, and you’ll only pay the
+              difference for the remaining billing period.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="accordion-item mb-3 rounded-3 shadow-sm" data-aos="fade-up" data-aos-delay="100">
+          <h2 class="accordion-header" id="faqThree">
+            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+              data-bs-target="#answerThree" aria-expanded="false" aria-controls="answerThree">
+              Do you offer customer support?
+            </button>
+          </h2>
+          <div id="answerThree" class="accordion-collapse collapse" aria-labelledby="faqThree"
+            data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Absolutely!Yes, we offer 24/7 customer support through email and chat. Our team is always available to
+              assist you with any questions, technical issues, or guidance you may need.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="accordion-item mb-3 rounded-3 shadow-sm" data-aos="fade-up" data-aos-delay="100">
+          <h2 class="accordion-header" id="faqFour">
+            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+              data-bs-target="#answerFour" aria-expanded="false" aria-controls="answerFour">
+              Is there a refund policy?
+            </button>
+          </h2>
+          <div id="answerFour" class="accordion-collapse collapse" aria-labelledby="faqFour"
+            data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Yes, we offer a refund policy. If you’re not satisfied with our service, you can request a refund within
+              14 days of purchase, subject to our terms and conditions.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    AOS.init({
+      duration: 1000, // animation speed
+      once: true      // ek hi bar chale
+    });
+  </script>
+
+  <!-- Footer -->
+  <footer id="contant" class="footer text-white pt-5 pb-3">
+    <div class="container">
+      <div class="row gy-4">
+
+        <!-- Brand / About -->
+        <div class="col-md-3">
+          <h3 class="fw-bold">🤖 AI Worlds</h3>
+          <p class="small text-light">
+            Empowering professional and learner with cutting-edge AI tools to make life smarter, faster, and easier.
+          </p>
+          <div class="d-flex gap-3 mt-3">
+            <a href="#" class="text-white fs-5"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-white fs-5"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="text-white fs-5"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="text-white fs-5"><i class="bi bi-instagram"></i></a>
+          </div>
+
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-md-2">
+          <h5 class="fw-bold mb-3">Quick Links</h5>
+          <ul class="list-unstyled small">
+            <li><a href="#" class="text-light text-decoration-none">Home</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Features</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Pricing</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Testimonials</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Contact</a></li>
+          </ul>
+        </div>
+
+       
+
+        <!-- Contact Info -->
+        <div class="col-md-2">
+          <h5 class="fw-bold mb-3">Contact</h5>
+          <ul class="list-unstyled small">
+            <li><i class="bi bi-telephone-fill me-2 text-warning"></i> +92 329 7198649</li>
+            <li><i class="bi bi-envelope-fill me-2 text-warning"></i> info@gmail.com</li>
+            <li><i class="bi bi-geo-alt-fill me-2 text-warning"></i> Lodhran, Pakistan</li>
+          </ul>
+        </div>
+
+
+        <!-- Newsletter -->
+        <div class="col-md-3">
+          <h5 class="fw-bold mb-3">Newsletter</h5>
+          <p class="small">Subscribe to get the latest AI updates.</p>
+          <form class="d-flex">
+            <input type="email" class="form-control rounded-start-pill" placeholder="Enter your email">
+            <button class="btn btn-warning rounded-end-pill">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <hr class="border-light my-4">
+
+      <div class="text-center small">
+        © 2025 <span class="fw-bold">AI World Created by Ghalia Eman</span>. All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </div>
+
+
+
+
+</body>
+
+</html>

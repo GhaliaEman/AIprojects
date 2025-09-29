@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(120deg, #0f172a, #1e293b);
+      overflow: hidden;
+      position: relative;
+    }
+    /* Animated circles */
+    .circle {
+      position: absolute;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.1);
+      animation: float 10s infinite ease-in-out;
+    }
+
+    .circle:nth-child(1) {
+      width: 120px; height: 120px;
+      left: 10%; top: 20%;
+      animation-duration: 12s;
+    }
+    .circle:nth-child(2) {
+      width: 80px; height: 80px;
+      left: 70%; top: 30%;
+      animation-duration: 15s;
+    }
+    .circle:nth-child(3) {
+      width: 150px; height: 150px;
+      left: 50%; top: 70%;
+      animation-duration: 18s;
+    }
+    .circle:nth-child(4) {
+      width: 100px; height: 100px;
+      left: 20%; top: 80%;
+      animation-duration: 20s;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0) scale(1); }
+      50% { transform: translateY(-30px) scale(1.1); }
+      100% { transform: translateY(0) scale(1); }
+    }
+
+    .login-box {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(15px);
+      border-radius: 15px;
+      padding: 40px;
+      width: 340px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+      text-align: center;
+      color: white;
+      z-index: 1;
+      position: relative;
+    }
+
+    .login-box h2 {
+      margin-bottom: 20px;
+      font-size: 28px;
+      font-weight: 600;
+    }
+
+    .login-box input {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 8px;
+      outline: none;
+      font-size: 15px;
+      background: rgba(255, 255, 255, 0.1);
+      color: #fff;
+      box-sizing: border-box;
+    }
+
+    .login-box input::placeholder { color: #ccc; }
+
+    .input-group {
+      position: relative;
+    }
+
+    .input-group input {
+      padding-right: 40px; /* space for eye icon */
+    }
+
+    .toggle-password {
+      position: absolute;
+      right: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+      font-size: 18px;
+      color: #bbb;
+      transition: color 0.3s ease;
+    }
+
+    .toggle-password:hover {
+      color: #a5b4fc;
+    }
+
+    .login-box button {
+      width: 100%;
+      padding: 12px;
+      margin-top: 15px;
+      border: none;
+      border-radius: 8px;
+      background: linear-gradient(135deg, #6366f1, #818cf8);
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .login-box button:hover {
+      background: linear-gradient(135deg, #4f46e5, #6366f1);
+      transform: scale(1.05);
+    }
+
+    .login-box p {
+      margin-top: 15px;
+      font-size: 14px;
+    }
+
+    .login-box a {
+      color: #a5b4fc;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .login-box a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+     <!-- Animated circles background -->
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+
+  <div class="login-box">
+    <h2>Welcome Back 👋</h2>
+    <form id="loginForm">
+      <!-- Email Field with pre-filled value -->
+      <input type="email" placeholder="Enter Email" value="info@email.com" required>
+
+      <!-- Password Field with Eye Icon -->
+      <div class="input-group">
+        <input type="password" id="password" placeholder="Enter Password" value="12345" required>
+        <i class="fa-solid fa-eye toggle-password" onclick="togglePassword()"></i>
+      </div>
+
+      <button type="submit">Login</button>
+    </form>
+    <p>Don't have an account? <a href="#">Sign Up</a></p>
+    <p><a href="#">Forgot Password?</a></p>
+  </div>
+
+  <script>
+    // ✅ Show/Hide Password
+    function togglePassword() {
+      const passwordField = document.getElementById("password");
+      const toggleIcon = document.querySelector(".toggle-password");
+
+      if (passwordField.type === "password") {
+        passwordField.type = "text";
+        toggleIcon.classList.remove("fa-eye");
+        toggleIcon.classList.add("fa-eye-slash");
+      } else {
+        passwordField.type = "password";
+        toggleIcon.classList.remove("fa-eye-slash");
+        toggleIcon.classList.add("fa-eye");
+      }
+    }
+
+    // ✅ Redirect on Login
+    document.getElementById("loginForm").addEventListener("submit", function(e){
+      e.preventDefault();
+      window.location.href = "index.html"; 
+    });
+  </script>
+</body>
+</html>
