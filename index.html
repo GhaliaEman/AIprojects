@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>MetaAI Blog — Home</title>
+  <title>MetaAI Blog</title>
   <meta name="description" content="AI blog with modern neon theme, responsive navbar, and dark/light mode toggle." />
 
   <!-- Google Fonts -->
@@ -237,81 +237,56 @@
 
 
   <!-- Testimonial Section -->
-  <section id="review" class="testimonial-section py-5">
-    <div class="container text-center">
-      <h2 class="gradient-heading mb-4"> What People Say About Our AI</h2>
+<section id="review" class="testimonial-section py-5">
+  <div class="container">
+    <h2 class="gradient-heading text-center mb-4"> What People Say About Our AI</h2>
 
-      <!-- Carousel -->
-      <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
+    <!-- Carousel -->
+    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
 
-          <!-- Testimonial 1 -->
-          <div class="carousel-item active">
-            <div class="testimonial-card mx-auto">
-              <img src="images\Ishaq.jfif" alt="user">
+        <!-- Testimonial 1 -->
+        <div class="carousel-item active">
+          <div class="testimonial-card d-flex align-items-center">
+            <!-- Left: Image -->
+            <div class="testimonial-img">
+              <img src="images/Ishaq.jfif" alt="user">
+            </div>
+            <!-- Right: Text -->
+            <div class="testimonial-text">
               <h5>Ishaq Khan</h5>
               <p class="role">AI Researcher</p>
-              <p class="feedback">“This AI tool transformed my workflow. Its accuracy and efficiency are beyond my
-                expectations.”</p>
+              <p class="feedback">“This AI tool transformed my workflow. Its accuracy and efficiency are beyond my expectations.”</p>
             </div>
           </div>
-
-          <!-- Testimonial 2 -->
-          <div class="carousel-item">
-            <div class="testimonial-card mx-auto">
-              <img src="images\Umar Khan.png" alt="user">
-              <h5>Umar Khan</h5>
-              <p class="role">Software Engineer</p>
-              <p class="feedback">“A must-have for anyone working with data. The AI insights are simply game-changing.”
-              </p>
-            </div>
-          </div>
-
-          <!-- Testimonial 3 -->
-          <div class="carousel-item">
-            <div class="testimonial-card mx-auto">
-              <img src="images\Usama Qamar.png" alt="user">
-              <h5>Usama Qamar</h5>
-              <p class="role">Entrepreneur</p>
-              <p class="feedback">“Our business productivity doubled after adopting this AI system. Highly recommended!”
-              </p>
-            </div>
-          </div>
-
-          <!-- Testimonial 4 -->
-          <div class="carousel-item">
-            <div class="testimonial-card mx-auto">
-              <img src="images\Qasim Khan.png" alt="user">
-              <h5>Qasim Khan</h5>
-              <p class="role">Data Scientist</p>
-              <p class="feedback">“The AI suggestions save me hours every week. Truly a revolutionary tool for
-                professionals.”</p>
-            </div>
-          </div>
-
-          <!-- Testimonial 5 -->
-          <div class="carousel-item">
-            <div class="testimonial-card mx-auto">
-              <img src="images\Numan Khan.png" alt="user">
-              <h5>Numan Khan</h5>
-              <p class="role">Startup Founder</p>
-              <p class="feedback">“With this AI, we scaled faster than ever before. It feels like having a smart partner
-                24/7.”</p>
-            </div>
-          </div>
-
         </div>
 
-        <!-- Carousel controls -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon"></span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon"></span>
-        </button>
+        <!-- Testimonial 2 -->
+        <div class="carousel-item">
+          <div class="testimonial-card d-flex align-items-center">
+            <div class="testimonial-img">
+              <img src="images/Umar Khan.png" alt="user">
+            </div>
+            <div class="testimonial-text">
+              <h5>Umar Khan</h5>
+              <p class="role">Software Engineer</p>
+              <p class="feedback">“A must-have for anyone working with data. The AI insights are simply game-changing.”</p>
+            </div>
+          </div>
+        </div>
+
       </div>
+
+      <!-- Carousel controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
     </div>
-  </section>
+  </div>
+</section>
 
   <script>
     const testimonialCarousel = document.querySelector('#testimonialCarousel');
